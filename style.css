@@ -1,0 +1,144 @@
+.general-form {
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    outline: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #D8D8D8;
+    border-radius: 2px;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 7px;
+}
+
+select#safety-select option[value="Safety"]   { 
+    background-image:url('image/security.png');
+}
+
+a:link{
+    color: #1B8BCE;
+}
+a{
+    color: #1B8BCE;
+}
+.btn-cancel{
+    border: 0; 
+    outline: none !important;
+    background-color: transparent !important;
+    color: #8B8B8B;
+    font-size: 12px;
+}
+
+.btn-create{
+    border: 0; 
+    outline: none !important; 
+    color: #FFFFFF; 
+    background-color: #1B8BCE; 
+    border-radius: 2px;
+    height: 30px;
+    width: 62px;
+    font-size: 12px;
+}
+
+.fc-grey{
+    color: #505050;
+}
+
+.fc-silver{
+    color: #AEAEAE;
+}
+
+.form-input::placeholder {
+    color: #C8C8C8;
+}
+
+.tbl-csv tr td {
+    font-size: 12px;
+}
+
+.tbl-csv thead{
+    background-color: #42A4DF;
+    color: #FFFFFF;
+}
+.tbl-csv tbody{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 4px;
+    height: 4px;
+    border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(97, 94, 255, 1);
+}
+
+.checkbox {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: #FFFFFF;
+    border: 1px solid hsl(0, 0%, 82%);
+    border-radius: 2px;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: #FFFFFF !important;
+}
+
+.checkbox:checked:before {
+   position: absolute;
+   left: 1.5px;
+   top: -1.5px;
+   display: block;
+   content: '\2713';
+   text-align: center;
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: 800;
+}
+
+.checkbox-primary {
+    width: 13px !important;
+    height: 13px !important;
+}
+.checkbox-primary:checked:before {
+    color: #42A4DF !important;
+    top: -1px !important;
+    left: 1px !important;
+    font-size: 09px !important;
+}
+
+.modal-dialog{
+    margin-top: 70px;
+}
+
+
