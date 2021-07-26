@@ -93,22 +93,37 @@
                 <!--Modal Body-->
                 <div class="modal-body">
                         <div style="width: 60%;">
-                            <div style="display: flex;">
-                                <div style="width: 50%;"><label class="fc-grey" style="font-size: 11px;">Category</label></div>
-                                <div style=" text-align: right; width: 50%;">
-                                    <label style=" font-size: 11px;"><a href="">+Add new</a></label>
-                                    
+                                <div style="display: flex;">
+                                    <div style="width: 50%;"><label class="fc-grey" style="font-size: 11px;">Category</label></div>
+                                    <div style=" text-align: right; width: 50%;">
+                                        <label style=" font-size: 11px;"><a href="">+Add new</a></label>
+                                        
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle text-left" style="width:100%; font-size: 11px; color: #484848; background-color: transparent; border: 1px solid #D8D8D8;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <img src="image/security.png"><span class="pl-2">Safety</span>
-                                </button>
-                                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#"><img src="image/security.png"><span class="pl-2">Safety</span></a>
+                                <div class="select_wrap mt-0 mb-2">
+                                    <ul class="default_option pl-0 mb-0">
+                                        <li>
+                                            <div class="option pizza">
+                                              <div class="icon"></div>
+                                              <p class="m-0">Safety</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="select_ul">
+                                        <li>
+                                            <div class="option pizza">
+                                              <div class="icon"></div>
+                                              <p class="m-0">Safety</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option burger">
+                                              <div class="icon1"></div>
+                                              <p class="m-0">Burget</p>
+                                            </div>  
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            
                         </div>
                    
                         <div>
@@ -142,6 +157,20 @@
             });
         });
     </script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             $(".default_option").click(function(){
+               $(this).parent().toggleClass("active");
+             })
+ 
+             $(".select_ul li").click(function(){
+               var currentele = $(this).html();
+               $(".default_option li").html(currentele);
+               $(this).parents(".select_wrap").removeClass("active");
+             })
+         });
+     </script>
 
   </body>
 </html>
